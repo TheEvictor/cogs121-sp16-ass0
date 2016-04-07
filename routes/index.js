@@ -1,4 +1,10 @@
+var mongoose = require('mongoose');
+
 exports.view = function(req, res) {
-    var data = {data: []};
-    res.render("index", data);
+	mongoose.model('Message').find(function(err,messages) {
+    	if(err) {
+    		res.render("index", {"data": "Error loading messages"});
+    	}
+   		res.render("index", {"data": messages});
+	});
 }

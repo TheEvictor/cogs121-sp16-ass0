@@ -1,0 +1,27 @@
+{
+  "name": "assignment0",
+  "version": "1.0.0",
+  "description": "COGS121 Assignment 0",
+  "main": "server.js",
+  "scripts": {
+    "prestart": "mongod --dbpath dbpath --logpath log/mongod.log&",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/TheEvictor/cogs121-sp16-ass0.git"
+  },
+  "author": "Austin Chinn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheEvictor/cogs121-sp16-ass0/issues"
+  },
+  "homepage": "https://github.com/TheEvictor/cogs121-sp16-ass0#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "express-handlebars": "^3.0.0",
+    "mongodb": "^2.1.15",
+    "mongoose": "^4.4.11"
+  }
+}
